@@ -7,7 +7,7 @@ $ cd egg-core-pull-129
 $ npm install
 ```
 
-### Configure MySQL
+## Configure MySQL
 
 Please configure mysql connection parameters. (empty database just does well)
 
@@ -28,14 +28,20 @@ Edit the file: `src/backend/config/config.default.js`
   };
 ```
 
-### Run
+## Run
 
-Start Backend Dev Service
+### Start Backend Dev Service
 ``` bash
 $ npm run dev:backend
 ```
 
-Start Backend Prod Service
+This will work normallly.
+
+### Start Backend Prod Service
 ``` bash
 $ npm run start:backend
 ```
+
+This will not work, and throw such error:
+> throw new Error(`Can not find plugin ${name} in "${lookupDirs.join(', ')}"`);
+>   egg-core-pull-129/node_modules/egg-core/lib/loader/mixin/plugin.js:345
