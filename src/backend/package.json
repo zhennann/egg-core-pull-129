@@ -1,0 +1,6 @@
+{
+  "name": "backend-egg-core-pull-129",
+  "egg": {
+    "framework": "egg-born-backend"
+  }
+}

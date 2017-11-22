@@ -1,0 +1,35 @@
+{
+  "name": "egg-core-pull-129",
+  "version": "1.0.0",
+  "description": "egg-core-pull-129",
+  "scripts": {
+    "dev:front": "egg-born-bin front-dev",
+    "build:front": "egg-born-bin front-build",
+    "dev:backend": "egg-born-bin backend-dev",
+    "debug:backend": "egg-born-bin backend-debug",
+    "lint": "eslint src",
+    "test:backend": "egg-born-bin backend-test",
+    "cov:backend": "egg-born-bin backend-cov",
+    "start:backend": "egg-scripts start ./src/backend --daemon",
+    "stop:backend": "egg-scripts stop ./src/backend"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "author": "zhennann",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-eslint": "^8.0.2",
+    "eslint": "^4.11.0",
+    "eslint-config-egg": "^5.1.1",
+    "eslint-plugin-vuefix": "^0.2.1"
+  },
+  "dependencies": {
+    "egg-born-front": "^1.0.17",
+    "egg-born-backend": "^1.0.33",
+    "egg-born-bin": "^1.0.2",
+    "egg-born-module-a-version": "^1.0.19",
+    "egg-scripts": "^2.1.1"
+  }
+}
